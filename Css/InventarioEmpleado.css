@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;500;600;700;800 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1370px;
+    margin: 0 auto;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+.swiper-slide{
+    font-size: 18px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #edb312;
+}
+
+.swiper-slide h2{
+    padding: 218px;
+}
+
+.menu .logo img {
+    width: 70px;
+    padding: 0 0 0 20px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #f8d77e;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 50px;
+    padding: 0 20px 0 0;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    align-items: center;
+    margin-top: 100px;
+}
+
+.sliter{
+    width: 1100px;
+}
+
+hr{
+    border: 1px solid #edb312;
+}
+
+.footer{
+    background-color: #edb312;
+}
+
+.footer-text{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text img{
+    width: 100px;
+    padding: 0 0 10px 0;
+}
+
+.footer p{
+    padding: 0 0 20px 0;
+}
+
+@media(max-width:991px){
+    .container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .menu{
+        padding: 0px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #edb312;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    .menu .navbar ul li a{
+        color: #ffffff;
+    }
+
+    .menu .navbar ul li a:hover{
+        color: #bebebe;
+    }
+    
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header-content{
+        padding: 0px;
+    }
+
+    .slider{
+        width: 10px;
+    }
+
+    .footer{
+        padding: 0px;
+    }
+    .swiper-slide{
+        height: 405px;
+        flex-direction: column;
+    }
+    .header-content {
+        text-align: center;
+        margin-top: 100px;
+    }
+}
